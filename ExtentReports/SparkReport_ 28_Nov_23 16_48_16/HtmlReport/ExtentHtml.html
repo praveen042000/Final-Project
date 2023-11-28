@@ -1,0 +1,2142 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'></span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Nov 28, 2023 04:48:16 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@ValidCredentials</a></li>
+					<li><a href='#'>@InvalidCredentials</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
+                    <span class='strong'>0</span> features passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    8</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
+                    <span class='strong'>0</span> scenarios passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    11</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='11%'>
+                    <span class='strong'>10</span> steps passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='23%'>
+                    21</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='65%'>
+                    59</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Entering the Employee details</span>
+						<span class='test-time'>Nov 28, 2023 04:48:18 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='2' status='fail'>
+
+	<span class='duration right label'>00 00 42.839</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Adding Employee Status</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on the Website homepage</div>
+
+
+		</li>
+		<li test-id='5' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters the valid username and password</div>
+
+
+		</li>
+		<li test-id='6' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the login button</div>
+
+
+		</li>
+		<li test-id='7' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_admin_feature())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks admin feature</div>
+
+
+		</li>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_selects_job())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User selects Job</div>
+
+
+		</li>
+		<li test-id='9' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_selects_employee_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User selects Employee Status</div>
+
+
+		</li>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_on_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User Clicks on Add button</div>
+
+
+		</li>
+		<li test-id='11' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_enters_the_employee_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User Enters the Employee Status</div>
+
+
+		</li>
+		<li test-id='12' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_on_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User Clicks on Save button</div>
+
+
+		</li>
+		<li test-id='13' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_recevices_successfully_saved_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User Recevices Successfully Saved message</div>
+
+
+		</li>
+		<li test-id='14' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: driver.version: ChromiumDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.send(JdkHttpClient.java:305)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.close(JdkHttpClient.java:324)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:212)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:60)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:430)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
+	at utility.HelperClass.tearDown(HelperClass.java:64)
+	at stepDefinition.HookClass.tearDown(HookClass.java:23)
+Caused by: java.io.IOException: Output closed
+	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask.tryCompleteWrite(TransportImpl.java:613)
+	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask.run(TransportImpl.java:551)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.websocket.TransportImpl.sendClose(TransportImpl.java:271)
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose0(WebSocketImpl.java:345)
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:315)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.lambda$send$3(JdkHttpClient.java:284)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.send(JdkHttpClient.java:295)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.close(JdkHttpClient.java:324)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:212)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:60)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:430)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
+	at utility.HelperClass.tearDown(HelperClass.java:64)
+	at stepDefinition.HookClass.tearDown(HookClass.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invokeStatic(Invoker.java:80)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:45)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Adding the leave reason</span>
+						<span class='test-time'>Nov 28, 2023 04:49:01 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='16' status='fail'>
+
+	<span class='duration right label'>00 00 00.067</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Adding the leave details to the category</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>sheetname</td><td>rownumber</td></tr><tr><td>sheet1</td><td>0</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='17' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Adding the leave details to the category</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='19' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+				</li>
+				<li test-id='20' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the valid username and password</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='21' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='22' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_leave_feature()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the leave feature</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='23' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_cliks_to_the_configure_to_the_field()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user cliks to the configure to the field</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='24' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_creates_new_leave_type_using_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user Creates new leave type using sheetname "sheet1" and rownumber 0</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='25' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_sees_the_adding_the_leave_page_switching()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then user sees the adding the leave page switching</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='26' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>Login an account in user website</span>
+						<span class='test-time'>Nov 28, 2023 04:49:01 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='28' status='fail'>
+
+	<span class='duration right label'>00 00 00.008</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Login with valid credentials</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@ValidCredentials</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='30' class='node given Fail' status='Fail'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Login.feature:4)
+</textarea>
+		</li>
+		<li test-id='31' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the valid username and password</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='32' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='33' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_sees_the_login_successful_message())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User sees the login successful message</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='34' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='35' status='fail'>
+
+	<span class='duration right label'>00 00 00.031</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Login with invalid credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>Admin1</td><td>admin1</td></tr><tr><td>admin123</td><td>admin</td></tr><tr><td>Aaddm</td><td>min123</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='36' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@InvalidCredentials</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='38' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Login.feature:4)
+</textarea>
+				</li>
+				<li test-id='39' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_invalid_username(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the invalid username "Admin1"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='40' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_invalid_password(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters the invalid password "admin1"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='41' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='42' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.login_is_unsuccessful_with_error_messages()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Login is unsuccessful with error messages</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='43' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+				</li>
+			</ul>
+		</li>
+		<li test-id='44' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@InvalidCredentials</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='46' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Login.feature:4)
+</textarea>
+				</li>
+				<li test-id='47' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_invalid_username(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the invalid username "admin123"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='48' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_invalid_password(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters the invalid password "admin"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='49' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='50' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.login_is_unsuccessful_with_error_messages()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Login is unsuccessful with error messages</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='51' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+				</li>
+			</ul>
+		</li>
+		<li test-id='52' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login with invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@InvalidCredentials</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='54' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Login.feature:4)
+</textarea>
+				</li>
+				<li test-id='55' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_invalid_username(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the invalid username "Aaddm"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='56' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_invalid_password(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters the invalid password "min123"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='57' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='58' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.login_is_unsuccessful_with_error_messages()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Login is unsuccessful with error messages</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='59' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>Trying to add new organization structure to orangeHRM</span>
+						<span class='test-time'>Nov 28, 2023 04:49:01 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='61' status='fail'>
+
+	<span class='duration right label'>00 00 00.006</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Adding new Organaization Structure</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>sheetname</td><td>rownumber</td></tr><tr><td>sheet1</td><td>0</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='62' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Adding new Organaization Structure</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='64' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Organization.feature:4)
+</textarea>
+				</li>
+				<li test-id='65' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the valid username and password</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='66' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='67' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_admin_feature()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks admin feature</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='68' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_selects_organization_category()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user selects Organization category</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='69' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_selects_structure_in_organaization_category()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User selects Structure in organaization category</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='70' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enables_edit_function()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enables Edit function</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='71' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_add_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks Add button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='72' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_unit_identification_using_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters unit identification using sheetname "sheet1" and rownumber 0</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='73' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_save()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user clicks save</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='74' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_should_be_able_to_see_structure_added_sucessfully()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should be able to see structure added sucessfully</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='75' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='76'>
+					<div class='test-heading'>
+						<span class='test-name'>Acessing the new user</span>
+						<span class='test-time'>Nov 28, 2023 04:49:01 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='77' status='fail'>
+
+	<span class='duration right label'>00 00 00.005</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Adding new user in PIM</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>sheetname</td><td>rownumber</td></tr><tr><td>sheet1</td><td>0</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='78' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Adding new user in PIM</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='80' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/PIM.feature:4)
+</textarea>
+				</li>
+				<li test-id='81' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the valid username and password</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='82' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='83' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_select_the_pim_feature()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User select the pim feature</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='84' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.select_the_add_employee_category()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Select the add employee category</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='85' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_fills_the_add_employee_details_using_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User fills the add employee details using sheetname "sheet1" and rownumber 0</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='86' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_able_to_see_the_new_employee_added_details()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User is able to see the new employee added details</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='87' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='88'>
+					<div class='test-heading'>
+						<span class='test-name'>Login an account in user website</span>
+						<span class='test-time'>Nov 28, 2023 04:49:01 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='89' status='fail'>
+
+	<span class='duration right label'>00 00 00.005</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Adding new skill</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>sheetname</td><td>rownumber</td></tr><tr><td>sheet1</td><td>0</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='90' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Adding new skill</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='92' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Skill.feature:4)
+</textarea>
+				</li>
+				<li test-id='93' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the valid username and password</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='94' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='95' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_clicks_admin_feature()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks admin feature</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='96' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_select_the_qualification_category()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user select the qualification category</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='97' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_select_the_add_skills_category()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user select the add skills category</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='98' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_enter_the_details_using_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user enter the details using sheetname "sheet1" and rownumber 0</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='99' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_click_save_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And user click save button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='100' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinition.StepDefinitionOfWebsite.user_is_able_to_see_the_added_skilled_details()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then user is able to see the added skilled details</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='101' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='102'>
+					<div class='test-heading'>
+						<span class='test-name'>Login an account in user website</span>
+						<span class='test-time'>Nov 28, 2023 04:49:01 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='103' status='fail'>
+
+	<span class='duration right label'>00 00 00.005</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Adding new customer to project info</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='105' class='node given Fail' status='Fail'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Time.feature:4)
+</textarea>
+		</li>
+		<li test-id='106' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the valid username and password</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='107' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='108' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_selects_the_time_feature())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When user selects the time feature</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='109' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_selects_the_projectinfo_category())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When user selects the projectinfo category</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='110' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_selects_the_customer_option())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When user selects the customer option</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='111' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_the_add_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When user clicks the add button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='112' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_adds_the_addcustomer_name_description_and_clicks_the_save_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When user adds the addcustomer name, description, and clicks the save button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='113' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_sees_the_added_customer_details())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then user sees the added customer details</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='114' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='115'>
+					<div class='test-heading'>
+						<span class='test-name'>Login an account in user website</span>
+						<span class='test-time'>Nov 28, 2023 04:49:01 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='116' status='fail'>
+
+	<span class='duration right label'>00 00 00.004</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Checking User Status is Enabled or not</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='118' class='node given Fail' status='Fail'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User is on the Website homepage</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/User.feature:4)
+</textarea>
+		</li>
+		<li test-id='119' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_enters_the_valid_username_and_password())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters the valid username and password</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='120' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_the_login_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks the login button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='121' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_clicks_admin_feature())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks admin feature</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='122' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_the_enters_the_username_to_search())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User the enters the username to Search</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='123' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_the_clciks_the_savebutton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User the Clciks the savebutton</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='124' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(stepDefinition.StepDefinitionOfWebsite.user_is_checking_the_status_of_user_is_enabled_or_not())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User is Checking the Status of user is Enabled or not</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='125' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at stepDefinition.HookClass.tearDown(HookClass.java:20)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ValidCredentials</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='28'>Login with valid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@InvalidCredentials</span>
+						<span class='category-status right'>
+						<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='36'>Login with invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='44'>Login with invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='52'>Login with invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 28, 2023 04:49:00 PM</td>
+										<td class='linked' test-id='14'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: driver.version: ChromiumDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.send(JdkHttpClient.java:305)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.close(JdkHttpClient.java:324)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:212)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:60)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:430)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
+	at utility.HelperClass.tearDown(HelperClass.java:64)
+	at stepDefinition.HookClass.tearDown(HookClass.java:23)
+Caused by: java.io.IOException: Output closed
+	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask.tryCompleteWrite(TransportImpl.java:613)
+	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask.run(TransportImpl.java:551)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.websocket.TransportImpl.sendClose(TransportImpl.java:271)
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose0(WebSocketImpl.java:345)
+	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:315)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.lambda$send$3(JdkHttpClient.java:284)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.send(JdkHttpClient.java:295)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$5.close(JdkHttpClient.java:324)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:212)
+	at org.openqa.selenium.devtools.DevTools.close(DevTools.java:60)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:430)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
+	at utility.HelperClass.tearDown(HelperClass.java:64)
+	at stepDefinition.HookClass.tearDown(HookClass.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invokeStatic(Invoker.java:80)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:45)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchSessionException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>20</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='19'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='26'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='30'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='34'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='38'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='43'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='46'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='51'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='54'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='59'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='64'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='75'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='80'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='87'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='92'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='101'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='105'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='114'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='118'>Given User is on the Website homepage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2023 04:49:01 PM</td>
+										<td class='linked' test-id='125'>stepDefinition.HookClass.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53189/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at stepDefinition.StepDefinitionOfWebsite.user_is_on_the_orangehrm_com_homepage(StepDefinitionOfWebsite.java:38)
+	at ✽.User is on the Website homepage(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Leave.feature:4)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>8</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>11</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>90</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Nov 28, 2023 04:48:16 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Nov 28, 2023 04:49:02 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00 00 46.378</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>version</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>os</td>
+								<td>windows</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@ValidCredentials</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@InvalidCredentials</td>
+							<td>0</td>
+							<td>3</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 8,
+				passParent: 0,
+				failParent: 8,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				childCount: 11,
+				passChild: 0,
+				failChild: 11,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				grandChildCount: 90,
+				passGrandChild: 10,
+				failGrandChild: 21,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 59,
+				infoGrandChild: 0,
+			};
+			</script>
+		
+		<script>
+			var timeline = {
+			        "Entering the Employee details":43.156,"Adding the leave reason":0.067,"Login an account in user website":0.048,"Trying to add new organization structure to orangeHRM":0.006,"Acessing the new user":0.005,"Login an account in user website":0.005,"Login an account in user website":0.005,"Login an account in user website":0.004
+			};
+		</script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
+		<script type='text/javascript'>
+				
+		</script> 
+
+	</body>
+</html>
