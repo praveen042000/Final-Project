@@ -1,108 +1,108 @@
-[INFO ] 2023-11-28 16:55:22.129 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:55:33.437 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:55:34.662 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:55:35.955 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:55:37.967 [main] StepDefinitionOfWebsite - User clicks admin feature
-[INFO ] 2023-11-28 16:55:38.397 [main] StepDefinitionOfWebsite - User selects Job
-[INFO ] 2023-11-28 16:55:38.829 [main] StepDefinitionOfWebsite - User selects Employee Status
-[INFO ] 2023-11-28 16:55:39.913 [main] StepDefinitionOfWebsite - User Clicks on Add button
-[INFO ] 2023-11-28 16:55:40.363 [main] StepDefinitionOfWebsite - User Enters the Employee Status
-[INFO ] 2023-11-28 16:55:40.671 [main] StepDefinitionOfWebsite - User Clicks on Save button
-[INFO ] 2023-11-28 16:55:40.673 [main] StepDefinitionOfWebsite - User Recevices Successfully Saved message
-[INFO ] 2023-11-28 16:55:41.131 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:55:45.397 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:55:51.051 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:55:51.746 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:55:53.052 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:55:59.419 [main] StepDefinitionOfWebsite - User clicks the leave feature
-[INFO ] 2023-11-28 16:56:02.794 [main] StepDefinitionOfWebsite - user cliks to the configure to the field
-[DEBUG] 2023-11-28 16:56:09.825 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2023-11-28 16:56:09.830 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2023-11-28 16:56:10.917 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[INFO ] 2023-11-28 16:56:14.827 [main] StepDefinitionOfWebsite - user Creates new leave type
-[INFO ] 2023-11-28 16:57:00.886 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:57:07.485 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:57:12.081 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:57:12.935 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:57:14.166 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:57:14.784 [main] StepDefinitionOfWebsite - Login successful. Dashboard page displayed
-[INFO ] 2023-11-28 16:57:15.335 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:57:17.084 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:57:21.904 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:57:22.641 [main] StepDefinitionOfWebsite - Entered invalid username
-[INFO ] 2023-11-28 16:57:22.723 [main] StepDefinitionOfWebsite - Entered invalid password
-[INFO ] 2023-11-28 16:57:23.601 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:57:24.015 [main] StepDefinitionOfWebsite - Login unsuccessful. Error message displayed
-[INFO ] 2023-11-28 16:57:24.520 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:57:26.673 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:57:32.323 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:57:32.940 [main] StepDefinitionOfWebsite - Entered invalid username
-[INFO ] 2023-11-28 16:57:33.016 [main] StepDefinitionOfWebsite - Entered invalid password
-[INFO ] 2023-11-28 16:57:33.939 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:57:34.305 [main] StepDefinitionOfWebsite - Login unsuccessful. Error message displayed
-[INFO ] 2023-11-28 16:57:34.735 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:57:36.354 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:57:42.366 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:57:42.965 [main] StepDefinitionOfWebsite - Entered invalid username
-[INFO ] 2023-11-28 16:57:43.047 [main] StepDefinitionOfWebsite - Entered invalid password
-[INFO ] 2023-11-28 16:57:43.881 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:57:44.238 [main] StepDefinitionOfWebsite - Login unsuccessful. Error message displayed
-[INFO ] 2023-11-28 16:57:44.449 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:57:46.216 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:57:50.588 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:57:51.416 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:57:51.442 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:57:54.096 [main] StepDefinitionOfWebsite - User clicks admin feature
-[INFO ] 2023-11-28 16:57:54.584 [main] StepDefinitionOfWebsite - user selects Organization category
-[INFO ] 2023-11-28 16:57:55.106 [main] StepDefinitionOfWebsite - User selects Structure in organaization category
-[INFO ] 2023-11-28 16:57:55.910 [main] StepDefinitionOfWebsite - User enables Edit function
-[INFO ] 2023-11-28 16:57:55.998 [main] StepDefinitionOfWebsite - User clicks Add button
-[DEBUG] 2023-11-28 16:57:56.006 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2023-11-28 16:57:56.007 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2023-11-28 16:57:56.007 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[INFO ] 2023-11-28 16:57:56.240 [main] StepDefinitionOfWebsite - User enters unit identification
-[INFO ] 2023-11-28 16:57:56.302 [main] StepDefinitionOfWebsite - user clicks save
-[INFO ] 2023-11-28 16:57:56.336 [main] StepDefinitionOfWebsite - User should be able to see structure added sucessfully
-[INFO ] 2023-11-28 16:57:56.662 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:57:58.385 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:58:04.420 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:58:05.118 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:58:06.329 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:58:07.743 [main] StepDefinitionOfWebsite - User select the pim feature
-[DEBUG] 2023-11-28 16:58:08.894 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2023-11-28 16:58:08.895 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2023-11-28 16:58:08.895 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[INFO ] 2023-11-28 16:58:10.722 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:58:12.571 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:58:16.880 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:58:17.570 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:58:18.790 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:58:20.499 [main] StepDefinitionOfWebsite - User clicks admin feature
-[INFO ] 2023-11-28 16:58:20.934 [main] StepDefinitionOfWebsite - user select the qualification category
-[INFO ] 2023-11-28 16:58:22.647 [main] StepDefinitionOfWebsite - user select the add skills category
-[DEBUG] 2023-11-28 16:58:22.655 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-[DEBUG] 2023-11-28 16:58:22.656 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-[DEBUG] 2023-11-28 16:58:22.656 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-[INFO ] 2023-11-28 16:58:23.183 [main] StepDefinitionOfWebsite - user enter the details
-[INFO ] 2023-11-28 16:58:23.421 [main] StepDefinitionOfWebsite - user click save button
-[INFO ] 2023-11-28 16:58:27.161 [main] StepDefinitionOfWebsite - user is able to see the added skilled details
-[INFO ] 2023-11-28 16:58:27.444 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:58:29.015 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:58:36.395 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:58:37.072 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:58:38.234 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:58:40.070 [main] StepDefinitionOfWebsite - user selects the time feature
-[INFO ] 2023-11-28 16:58:40.532 [main] StepDefinitionOfWebsite - user selects the projectinfo category
-[INFO ] 2023-11-28 16:58:41.091 [main] StepDefinitionOfWebsite - user selects the customer option
-[INFO ] 2023-11-28 16:58:42.124 [main] StepDefinitionOfWebsite - user clicks the add button
-[INFO ] 2023-11-28 16:58:42.750 [main] StepDefinitionOfWebsite - user adds the addcustomer name, description, and clicks the save button
-[INFO ] 2023-11-28 16:58:48.576 [main] StepDefinitionOfWebsite - Driver closed Successfully
-[INFO ] 2023-11-28 16:58:50.256 [main] StepDefinitionOfWebsite - Driver setUp Successfully
-[INFO ] 2023-11-28 16:58:55.310 [main] StepDefinitionOfWebsite - Navigated to the website homepage
-[INFO ] 2023-11-28 16:58:56.135 [main] StepDefinitionOfWebsite - Entered valid username and password
-[INFO ] 2023-11-28 16:58:57.442 [main] StepDefinitionOfWebsite - Clicked on the login button
-[INFO ] 2023-11-28 16:58:59.119 [main] StepDefinitionOfWebsite - User clicks admin feature
-[INFO ] 2023-11-28 16:58:59.595 [main] StepDefinitionOfWebsite - User the enters the username to Search
-[INFO ] 2023-11-28 16:58:59.649 [main] StepDefinitionOfWebsite - User the Clciks the savebutton
-[INFO ] 2023-11-28 16:59:00.003 [main] StepDefinitionOfWebsite - User is Checking the Status of user is Enabled or not
-[INFO ] 2023-11-28 16:59:00.461 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:00:19.503 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:00:25.501 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:00:28.654 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:00:29.999 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:00:32.308 [main] StepDefinitionOfWebsite - User clicks admin feature
+[INFO ] 2023-11-28 18:00:32.904 [main] StepDefinitionOfWebsite - User selects Job
+[INFO ] 2023-11-28 18:00:33.647 [main] StepDefinitionOfWebsite - User selects Employee Status
+[INFO ] 2023-11-28 18:00:34.618 [main] StepDefinitionOfWebsite - User Clicks on Add button
+[INFO ] 2023-11-28 18:00:35.022 [main] StepDefinitionOfWebsite - User Enters the Employee Status
+[INFO ] 2023-11-28 18:00:35.347 [main] StepDefinitionOfWebsite - User Clicks on Save button
+[INFO ] 2023-11-28 18:00:35.349 [main] StepDefinitionOfWebsite - User Recevices Successfully Saved message
+[INFO ] 2023-11-28 18:00:36.150 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:00:40.143 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:00:46.535 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:00:47.195 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:00:49.055 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:00:50.966 [main] StepDefinitionOfWebsite - User clicks the leave feature
+[INFO ] 2023-11-28 18:00:53.562 [main] StepDefinitionOfWebsite - user cliks to the configure to the field
+[DEBUG] 2023-11-28 18:00:54.538 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-11-28 18:00:54.540 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-11-28 18:00:55.096 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2023-11-28 18:00:58.692 [main] StepDefinitionOfWebsite - user Creates new leave type
+[INFO ] 2023-11-28 18:01:51.239 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:01:59.736 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:02:05.824 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:02:06.940 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:02:08.298 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:02:09.190 [main] StepDefinitionOfWebsite - Login successful. Dashboard page displayed
+[INFO ] 2023-11-28 18:02:09.479 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:02:13.443 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:02:25.573 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:02:26.478 [main] StepDefinitionOfWebsite - Entered invalid username
+[INFO ] 2023-11-28 18:02:26.556 [main] StepDefinitionOfWebsite - Entered invalid password
+[INFO ] 2023-11-28 18:02:27.770 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:02:28.675 [main] StepDefinitionOfWebsite - Login unsuccessful. Error message displayed
+[INFO ] 2023-11-28 18:02:30.818 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:02:34.568 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:02:41.904 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:02:42.514 [main] StepDefinitionOfWebsite - Entered invalid username
+[INFO ] 2023-11-28 18:02:42.589 [main] StepDefinitionOfWebsite - Entered invalid password
+[INFO ] 2023-11-28 18:02:43.950 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:02:44.291 [main] StepDefinitionOfWebsite - Login unsuccessful. Error message displayed
+[INFO ] 2023-11-28 18:02:44.754 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:02:46.745 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:02:54.146 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:02:56.339 [main] StepDefinitionOfWebsite - Entered invalid username
+[INFO ] 2023-11-28 18:02:56.411 [main] StepDefinitionOfWebsite - Entered invalid password
+[INFO ] 2023-11-28 18:02:57.470 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:02:59.088 [main] StepDefinitionOfWebsite - Login unsuccessful. Error message displayed
+[INFO ] 2023-11-28 18:03:01.046 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:03:06.353 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:03:16.311 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:03:17.311 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:03:22.721 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:03:26.255 [main] StepDefinitionOfWebsite - User clicks admin feature
+[INFO ] 2023-11-28 18:03:26.916 [main] StepDefinitionOfWebsite - user selects Organization category
+[INFO ] 2023-11-28 18:03:27.360 [main] StepDefinitionOfWebsite - User selects Structure in organaization category
+[INFO ] 2023-11-28 18:03:28.171 [main] StepDefinitionOfWebsite - User enables Edit function
+[INFO ] 2023-11-28 18:03:28.235 [main] StepDefinitionOfWebsite - User clicks Add button
+[DEBUG] 2023-11-28 18:03:28.242 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-11-28 18:03:28.243 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-11-28 18:03:28.244 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2023-11-28 18:03:28.476 [main] StepDefinitionOfWebsite - User enters unit identification
+[INFO ] 2023-11-28 18:03:28.604 [main] StepDefinitionOfWebsite - user clicks save
+[INFO ] 2023-11-28 18:03:28.634 [main] StepDefinitionOfWebsite - User should be able to see structure added sucessfully
+[INFO ] 2023-11-28 18:03:29.390 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:03:31.071 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:03:36.486 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:03:37.313 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:03:37.336 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:03:40.838 [main] StepDefinitionOfWebsite - User select the pim feature
+[DEBUG] 2023-11-28 18:03:43.775 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-11-28 18:03:43.776 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-11-28 18:03:43.776 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2023-11-28 18:03:46.762 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:03:48.626 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:03:53.165 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:03:53.974 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:03:53.998 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:03:57.390 [main] StepDefinitionOfWebsite - User clicks admin feature
+[INFO ] 2023-11-28 18:03:57.981 [main] StepDefinitionOfWebsite - user select the qualification category
+[INFO ] 2023-11-28 18:03:59.758 [main] StepDefinitionOfWebsite - user select the add skills category
+[DEBUG] 2023-11-28 18:03:59.769 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-11-28 18:03:59.770 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-11-28 18:03:59.771 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2023-11-28 18:04:00.402 [main] StepDefinitionOfWebsite - user enter the details
+[INFO ] 2023-11-28 18:04:00.605 [main] StepDefinitionOfWebsite - user click save button
+[INFO ] 2023-11-28 18:04:04.993 [main] StepDefinitionOfWebsite - user is able to see the added skilled details
+[INFO ] 2023-11-28 18:04:05.975 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:04:07.692 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:04:12.662 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:04:13.332 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:04:14.676 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:04:16.164 [main] StepDefinitionOfWebsite - user selects the time feature
+[INFO ] 2023-11-28 18:04:16.556 [main] StepDefinitionOfWebsite - user selects the projectinfo category
+[INFO ] 2023-11-28 18:04:17.072 [main] StepDefinitionOfWebsite - user selects the customer option
+[INFO ] 2023-11-28 18:04:18.123 [main] StepDefinitionOfWebsite - user clicks the add button
+[INFO ] 2023-11-28 18:04:18.669 [main] StepDefinitionOfWebsite - user adds the addcustomer name, description, and clicks the save button
+[INFO ] 2023-11-28 18:04:24.771 [main] StepDefinitionOfWebsite - Driver closed Successfully
+[INFO ] 2023-11-28 18:04:27.156 [main] StepDefinitionOfWebsite - Driver setUp Successfully
+[INFO ] 2023-11-28 18:04:33.283 [main] StepDefinitionOfWebsite - Navigated to the website homepage
+[INFO ] 2023-11-28 18:04:34.112 [main] StepDefinitionOfWebsite - Entered valid username and password
+[INFO ] 2023-11-28 18:04:35.721 [main] StepDefinitionOfWebsite - Clicked on the login button
+[INFO ] 2023-11-28 18:04:39.005 [main] StepDefinitionOfWebsite - User clicks admin feature
+[INFO ] 2023-11-28 18:04:40.015 [main] StepDefinitionOfWebsite - User the enters the username to Search
+[INFO ] 2023-11-28 18:04:40.068 [main] StepDefinitionOfWebsite - User the Clciks the savebutton
+[INFO ] 2023-11-28 18:04:40.428 [main] StepDefinitionOfWebsite - User is Checking the Status of user is Enabled or not
+[INFO ] 2023-11-28 18:04:40.995 [main] StepDefinitionOfWebsite - Driver closed Successfully

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 28 16:55:16 IST 2023</td>
+<td>Started on:</td><td>Tue Nov 28 17:59:57 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>230 seconds (230967 ms)</td>
+<tr><td>Total time:</td><td>295 seconds (295804 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -87,8 +87,8 @@ function toggleAllBoxes() {
 	at actions.PimActions.excelsheetreads(PimActions.java:88)
 	at stepDefinition.StepDefinitionOfWebsite.user_fills_the_add_employee_details_using_sheetname_and_rownumber(StepDefinitionOfWebsite.java:294)
 	at ✽.User fills the add employee details using sheetname &quot;sheet1&quot; and rownumber 0(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/PIM.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1856963340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1856963340'><pre>java.io.FileNotFoundException: C:\Team2\Praveen_pilot_project\Venture_Vultures\src\test\resources\Data.xlsx
+</pre></div><a href='#' onClick='toggleBox("stack-trace187540389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187540389'><pre>java.io.FileNotFoundException: C:\Team2\Praveen_pilot_project\Venture_Vultures\src\test\resources\Data.xlsx
 	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:302)
 	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:277)
 	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:255)
@@ -99,7 +99,25 @@ function toggleAllBoxes() {
 	at stepDefinition.StepDefinitionOfWebsite.user_fills_the_add_employee_details_using_sheetname_and_rownumber(StepDefinitionOfWebsite.java:294)
 	at ✽.User fills the add employee details using sheetname &quot;sheet1&quot; and rownumber 0(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/PIM.feature:9)
 </pre></div></td>
-<td>14</td>
+<td>17</td>
+<td>runner.CucumberRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new customer to project info", "Login an account in user website"</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinition.StepDefinitionOfWebsite.user_sees_the_added_customer_details(StepDefinitionOfWebsite.java:114)
+	at ✽.user sees the added customer details(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Time.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2123685471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2123685471'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinition.StepDefinitionOfWebsite.user_sees_the_added_customer_details(StepDefinitionOfWebsite.java:114)
+	at ✽.user sees the added customer details(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Time.feature:12)
+</pre></div></td>
+<td>18</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding the leave details to the category", "Adding the leave reason"</td>
@@ -115,9 +133,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6900fd03b6bbb20e8aafacde5d946f9b, findElement {using=xpath, value=//span[text()=&apos;Already exists&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53342/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6900fd03b6bbb20e8aafacde5d946f9b
+Command: [00e42b72be1b23b87b462405ce1f68ed, findElement {using=xpath, value=//span[text()=&apos;Already exists&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54768}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54768/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00e42b72be1b23b87b462405ce1f68ed
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -206,9 +224,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6900fd03b6bbb20e8aafacde5d946f9b, findElement {using=xpath, value=//span[text()=&apos;Already exists&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53342/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6900fd03b6bbb20e8aafacde5d946f9b
+Command: [00e42b72be1b23b87b462405ce1f68ed, findElement {using=xpath, value=//span[text()=&apos;Already exists&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PMANOH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54768}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54768/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00e42b72be1b23b87b462405ce1f68ed
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -285,25 +303,7 @@ Session ID: 6900fd03b6bbb20e8aafacde5d946f9b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>79</td>
-<td>runner.CucumberRunner@2b40ff9c</td></tr>
-<tr>
-<td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new customer to project info", "Login an account in user website"</td>
-<td><div><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinition.StepDefinitionOfWebsite.user_sees_the_added_customer_details(StepDefinitionOfWebsite.java:114)
-	at ✽.user sees the added customer details(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Time.feature:12)
-</pre></div><a href='#' onClick='toggleBox("stack-trace456577608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace456577608'><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinition.StepDefinitionOfWebsite.user_sees_the_added_customer_details(StepDefinitionOfWebsite.java:114)
-	at ✽.user sees the added customer details(file:///C:/Team2/Team2/Venture_Vultures/src/test/resources/Feature/Time.feature:12)
-</pre></div></td>
-<td>21</td>
+<td>75</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -315,44 +315,44 @@ Session ID: 6900fd03b6bbb20e8aafacde5d946f9b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new Organaization Structure", "Trying to add new organization structure to orangeHRM"</td>
+<td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new skill", "Login an account in user website"</td>
 <td></td>
-<td>12</td>
+<td>19</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login an account in user website"</td>
 <td></td>
-<td>9</td>
+<td>16</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login an account in user website"</td>
 <td></td>
-<td>9</td>
+<td>21</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login an account in user website"</td>
 <td></td>
-<td>14</td>
+<td>18</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking User Status is Enabled or not", "Login an account in user website"</td>
 <td></td>
-<td>11</td>
+<td>16</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding Employee Status", "Entering the Employee details"</td>
 <td></td>
-<td>23</td>
+<td>37</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login an account in user website"</td>
 <td></td>
-<td>10</td>
+<td>13</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 <tr>
-<td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new skill", "Login an account in user website"</td>
+<td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding new Organaization Structure", "Trying to add new organization structure to orangeHRM"</td>
 <td></td>
-<td>16</td>
+<td>28</td>
 <td>runner.CucumberRunner@2b40ff9c</td></tr>
 </table><p>
 </body>
