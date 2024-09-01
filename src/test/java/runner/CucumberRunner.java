@@ -39,16 +39,16 @@ import io.cucumber.testng.CucumberOptions;
     features = "src/test/resources/Feature",
     glue = "stepDefinition",
     plugin = {
+        "pretty",
         "json:target/cucumber.json",
-        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-        "pretty", 
-        "html:target/cucumber/cucumber-reports.html",
-        "json:target/cucumber/cucumber-reports.json"
+        "html:target/cucumber-reports.html",
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
     }
 )
 public class CucumberRunner extends AbstractTestNGCucumberTests {
 
 }
+
 
 
 
